@@ -1,0 +1,11 @@
+import java.util.Date;
+
+public class Tester {
+	
+	public static void main(String[] args) {
+		FoodProduct cigars = new FoodProduct("420 Blaze it fgt", 6.90, 1400, 
+				AgeRestriction.Adult, "2014-10-20");
+		
+				
+	}
+}

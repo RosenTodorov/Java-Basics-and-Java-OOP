@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class AngleUnitConverter {
+	/**
+	   Write a method to convert from degrees to radians. Write a method 
+			to convert from radians to degrees. You are given a number n and n 
+			queries for conversion. Each conversion query will consist of 
+			a number + space + measure. Measures are "deg" and "rad". Convert 
+			all radians to degrees and all degrees to radians. Print the results 
+			as n lines, each holding a number + space + measure. Format all numbers 
+			with 6 digit after the decimal point.
+	 */
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

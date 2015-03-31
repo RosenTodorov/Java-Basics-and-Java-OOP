@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class LargestSequenceÎfEqualStrings {
+
+	/**
+	 * Write a program that enters an array of strings and finds in it the largest sequence of equal elements. 
+	 * If several sequences have the same longest length, print the leftmost of them. 
+	 * The input strings are given as a single line, separated by a space.
+	 */
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		String words = scan.nextLine();
+		String[] split = words.split(" ");
+		int count = Integer.MIN_VALUE;
+		int countWords = 0;
+		String wordsToDisplay = " ";
+		
+		for (int i = 0; i < split.length; i++) {
+			if (split[i].equals(split[i + 1])){
+				countWords++;
+			}
+			else {
+				countWords = 0;
+			}
+			if (countWords > count) {
+				count = countWords;
+				wordsToDisplay = split[i];				
+			}
+		}
+		
+		for (int i = 1; i <= count; i++) {
+			System.out.print(wordsToDisplay + " ");
+		}
+	}
+}

@@ -1,0 +1,9 @@
+INDEX VERSION 1.127+D:\Telerik\Java Basics\Java-Syntax\.metadata\.plugins\org.eclipse.jdt.core
+2342011101.index
+68534185.index
+1786114590.index
+3406323237.index
+760752964.index
+2431337120.index
+1556460622.index
+3455743655.index

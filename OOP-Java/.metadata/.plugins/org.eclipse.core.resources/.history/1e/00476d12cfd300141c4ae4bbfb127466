@@ -1,0 +1,16 @@
+
+
+import geometry2d.Vertices2D;
+
+public class Triangle extends PlaneShape {
+	public Triangle(Vertices2D v1, Vertices2D v2, Vertices2D v3) {
+		super(v1, v2, v3);
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("Triangle{%s, %s, %s}", 
+				this.vertices.get(0), this.vertices.get(1),
+				this.vertices.get(2));
+	}
+}

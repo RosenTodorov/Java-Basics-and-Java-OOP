@@ -1,0 +1,27 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class SortArrayofNumbers {
+	/**
+	 * Write a program to enter a number n and n integer numbers and sort and print them. 
+	 * Keep the numbers in array of integers: int[]. 
+	 */
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int numbers = scan.nextInt();
+		int[] arr = new int[numbers]; 
+		
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = scan.nextInt();
+		}
+		System.out.print(Arrays.toString(arr));
+		Arrays.sort(arr);
+		
+		for (int i = 0; i < arr.length; i++) {
+			System.out.print(arr[i] + " ");
+		}		
+		scan.close();
+	}
+
+}

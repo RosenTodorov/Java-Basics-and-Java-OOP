@@ -1,0 +1,20 @@
+import java.util.Date;
+
+public class Tester {
+	
+	public static void main(String[] args) {
+		FoodProduct cigars = new FoodProduct("420 Blaze it fgt", 6.90, 1400, AgeRestriction.Adult, "2014-10-20");
+		Customer pecata = new Customer("Pecata", 17, 30.00);
+		Customer gopeto = new Customer("Gopeto", 18, 0.44);
+		
+     	PurchaseManager.ProcessPurchase(pecata, cigars);
+		PurchaseManager.ProcessPurchase(gopeto, cigars);
+		
+		System.out.println(pecata.getBalance());
+		System.out.println(cigars.getQuantity());
+		
+		
+		
+				
+	}
+}

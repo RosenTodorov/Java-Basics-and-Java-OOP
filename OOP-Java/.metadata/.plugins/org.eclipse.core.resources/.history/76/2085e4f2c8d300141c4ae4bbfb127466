@@ -1,0 +1,17 @@
+package geometry2d;
+import AreaMeasurable;
+import PerimeterMeasurable;
+import Shape;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public abstract class PlaneShape extends Shape
+        implements PerimeterMeasurable, AreaMeasurable {
+	protected List<Vertices2D> vertices;
+
+	public PlaneShape(Vertices2D ... vertices) {
+		this.vertices = new ArrayList<Vertices2D>(Arrays.asList(vertices));
+	}	
+}

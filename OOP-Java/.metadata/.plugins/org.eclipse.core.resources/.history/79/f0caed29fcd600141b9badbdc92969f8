@@ -1,0 +1,59 @@
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+
+public class FoodProduct extends Product implements Expirable {
+	private Date expirationDate;
+	
+	public FoodProduct(String name, double price, int quantity,
+			AgeRestriction ageRestrictionLevel, String expirationDate) {
+		super(name, price, quantity, ageRestrictionLevel);
+	}
+	
+	public Date getExpirationDate() {
+		return expirationDate;
+	}
+
+	public void setExpirationDate(String expirationDate) {
+		SimpleDateFormat format = (SimpleDateFormat) DateFormat.getDateInstance();
+		format.applyPattern("yyyy-MM-dd");
+		
+		try {
+			this.expirationDate = format.parse(expirationDate);
+		} 
+		catch (ParseException e) {
+			throw new IllegalArgumentException("not a valid date");
+		}
+		isHasExpired();
+	}
+
+	public boolean isHasExpired(){
+		long now = new Date().getTime();
+		long period = (this.getExpirationDate().getTime() - now);
+		int days = (int) TimeUnit.DAYS.convert(period, TimeUnit.MILLISECONDS);
+		if (days < 15) {
+			this.setPrice(this.getPrice()*0.7);
+			return true;
+		}
+		return false;
+	}
+
+	public void setHasExpired(boolean hasExpired) {
+		this.hasExpired = hasExpired;
+	}
+
+	public long getDaysUntilExpiry() {
+		return daysUntilExpiry;
+	}
+
+	public void setDaysUntilExpiry(long daysUntilExpiry) {
+		this.daysUntilExpiry = daysUntilExpiry;
+	}
+	
+	public String toString() {
+		return super.toString() + 
+				"Expiration date: " + this.expirationDate.toString();
+	}
+}

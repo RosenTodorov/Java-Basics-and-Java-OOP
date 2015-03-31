@@ -1,0 +1,44 @@
+
+public class SquarePyramid extends SpaceShape {
+	private double baseWidth, pyramidHeight;
+	
+	public SquarePyramid(Vertices3D v1, double baseWidth, double pyramidHeight) {
+		super(v1);
+		this.baseWidth = baseWidth;
+		this.pyramidHeight = pyramidHeight;
+	}
+	
+	public double getPyramidHeight() {
+		return pyramidHeight;
+	}
+
+	public void setPyramidHeight(double pyramidHeight) {
+		this.pyramidHeight = pyramidHeight;
+	}
+
+	public double getBaseWidth() {
+		return baseWidth;
+	}
+
+	public void setBaseWidth(double baseWidth) {
+		this.baseWidth = baseWidth;
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("SquarePyramid{%s, baseWidth = %.2f, pyramidHeight = %.2f}", 
+				this.vertices.get(0), this.baseWidth, this.pyramidHeight);
+	}
+
+	@Override
+	public double getVolume() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

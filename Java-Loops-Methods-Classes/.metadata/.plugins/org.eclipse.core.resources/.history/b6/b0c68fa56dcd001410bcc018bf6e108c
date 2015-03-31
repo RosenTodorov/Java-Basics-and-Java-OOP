@@ -1,0 +1,69 @@
+
+public class FullHouseWithJokers {
+	/*
+	 *In most Poker games, the "full house" hand is defined as 
+	 *three cards of the same face + two cards of the same face, 
+	 *other than the first, regardless of the card's suits. 
+	 *The cards faces are "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K" and "A". 
+	 *The card suits are "♣", "♦", "♥" and "♠". 
+	 *A special card "Joker" (denoted as "*") is used as wildcard and can replace any other card. 
+	 *Jokers do not have a suite. 
+	 *Jokes can be used several times in a hand. 
+	 *Write a program to generate and print all full houses and print their number. 
+	 Example:
+	 Output
+	 (2♣ 2♦ 2♥ 3♣ 3♦) … (2♣ 2♦ 2♥ 3♣ 3♦) … (2♣ 2♦ 2♥ 3♣ 3♥) … (2♣ 2♦ 2♥ 3♣ *) …
+	 (2♣ * * 3♣ *) … (A♠ A♥ A♦ K♠ K♣) … (A♦ A♥ A♠ * *) … (* * * * *)
+	 119808 full houses
+	 */
+
+	public static void main(String[] args) {
+		String[] faces = { "2", "3", "4", "5", "6", "7", "8", "9", "10", 
+				"J", "Q", "K", "A" };
+		char[] suits = { '\u2666', '\u2663', '\u2665', '\u2660' };
+		int count = 0;
+		
+		String firstCard = "";
+		String secondCard = "";
+		String thirdCard = "";
+		String fourthCard = "";
+		String fifthCard = "";
+		
+		for (int i = 0; i < faces.length; i++) { // номер на първите карти
+			for (int j = 0; j < faces.length; j++) { // номер на вторите карти
+				for (int j2 = 0; j2 < suits.length; j2++) { // boq na parvite karti
+					for (int k = j2 + 1; k < suits.length; k++) {
+						for (int k2 = k + 1; k2 < suits.length; k2++) {
+							for (int l = 0; l < suits.length; l++) { // boq na vtorite karti
+								for (int l2 = l + 1; l2 < suits.length; l2++) {
+									if (i != j) {
+										firstCard = faces[i] + suits[j2];
+										secondCard = faces[i] + suits[k];
+										thirdCard = faces[i] + suits[k2];
+										fourthCard = faces[j] + suits[l];
+										fifthCard = faces[j] + suits[l];
+										String[] hand = { firstCard + secondCard + thirdCard + fourthCard + fifthCard };
+										
+										for (int combinations = 0; combinations <= 31; combinations++) {
+											int chekcer = combinations;
+											for (int jokers = 0; jokers < 5; jokers++) {
+												if (chekcer % 2 == 1) {
+													hand[jokers] = "* ";
+													chekcer /= 2;
+												}
+											}
+											System.out.println(hand[0] + hand[1] + hand[2] + hand[3] + hand[4]);
+											count++;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			System.out.println(count + " Full houses");
+		}
+	}
+}
+

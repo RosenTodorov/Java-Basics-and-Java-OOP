@@ -1,0 +1,26 @@
+
+public abstract class ElectronicsProduct extends Product {
+	private int guaranteePeriod;
+
+	public ElectronicsProduct(String name, double price, int quantity,
+			AgeRestriction ageRestrictionLevel, int guaranteePeriod) {
+		super(name, price, quantity, ageRestrictionLevel);
+		this.guaranteePeriod = guaranteePeriod;
+	}
+
+	public int getGuaranteePeriod() {
+		return guaranteePeriod;
+	}
+
+	public void setGuaranteePeriod(int guaranteePeriod) {
+		if (guaranteePeriod < 0) {
+			throw new IllegalArgumentException("The guarantee period cannot be negative");
+		}
+		this.guaranteePeriod = guaranteePeriod;
+	}
+	
+	public String toString() {
+		return super.toString() +
+				"Guarantee period: " + this.guaranteePeriod;
+	}
+}

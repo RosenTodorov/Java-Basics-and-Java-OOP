@@ -1,0 +1,47 @@
+
+public class GeometryExamples {
+	public static void main(String[] args) {
+		Triangle t = new Triangle(
+				new Vertices2D(3, 2),
+				new Vertices2D(-12, -3),
+				new Vertices2D(30, 25));
+		System.out.println(t);
+		
+		Rectangle r = new Rectangle(
+				new Vertices2D(3, 2),
+				12, 
+				7.5);
+		System.out.println(r);
+		
+		Circle c = new Circle(
+				new Vertices2D(3, -2),
+				3.8);
+		System.out.println(c);
+		
+		PlaneShape[] shapes = { c, r, t };
+		for (PlaneShape shape : shapes) {
+			System.out.printf("%s; Area = %.2f; Perimetar = %.2f\n", 
+					shape, shape.getArea(), shape.getPerimeter());
+		}
+		
+		SquarePyramid p = new SquarePyramid(
+				new Vertices3D(4, 6, 4),
+				10, 
+				8);
+		System.out.println(p);
+		
+		Cuboid cb = new Cuboid(
+				new Vertices3D(5, 4, 5),
+				14, 
+				6,
+				2);
+		System.out.println(cb);
+		
+		Sphere s = new Sphere(
+				new Vertices3D(4, 3, 4),
+				2.3);
+		System.out.println(s);
+		
+		
+	}
+}

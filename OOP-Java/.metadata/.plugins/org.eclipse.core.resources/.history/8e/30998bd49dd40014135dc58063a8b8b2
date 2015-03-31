@@ -1,0 +1,8 @@
+
+public class Vertices3D {
+	private double x, y, z;
+}
+
+
+
+
