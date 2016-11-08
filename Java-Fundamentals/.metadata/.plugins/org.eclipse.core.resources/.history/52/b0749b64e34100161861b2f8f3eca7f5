@@ -1,0 +1,19 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Locale;
+/**
+ * Problem 1:
+ * Write a program that reads a text file and prints
+ * on the console the sum of the ASCII symbols of each
+ * of its lines. Use BufferedReader in combination with FileReader.
+ */
+public class SumLines {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+}

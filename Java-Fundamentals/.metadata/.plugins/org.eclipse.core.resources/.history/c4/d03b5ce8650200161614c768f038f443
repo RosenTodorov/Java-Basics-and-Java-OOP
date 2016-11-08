@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class SumOfIntegers {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int n = scanner.nextInt();
+		int[]arr = new int[n];
+		System.out.print(sumOfIntegers(arr, n));
+		
+	}
+	 static long sumOfIntegers(int[] arr, int n) {
+	        arr = new int[n];
+	        int sum = 0;
+	        for(int i = 0; i < n; i++) {
+	    		Scanner scanner = new Scanner(System.in);
+	            int elementFirst = scanner.nextInt();
+	            arr[i] = elementFirst;
+	        }
+	        for(int i = 0; i < arr.length; i++) {
+	            sum += arr[i];
+	        } return sum;
+	    }
+}
