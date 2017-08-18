@@ -20,7 +20,7 @@ public class ReverseStringArray {
 			System.out.println(list);
 		} */
 		
-		strDays = (String[])list.toArray();
+		strDays = (String[]) list.toArray();
 		
 		System.out.println("String array reversed");
 		

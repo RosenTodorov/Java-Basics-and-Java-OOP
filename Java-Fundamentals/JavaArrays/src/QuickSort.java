@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class QuickSort {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub - n log(n)
 		Scanner scanner = new Scanner(System.in);
 		int length = scanner.nextInt();
 		Integer[] array = new Integer[length];

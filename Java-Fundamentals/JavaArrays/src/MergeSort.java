@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class MergeSort {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub - n log(n)
 		Scanner scanner = new Scanner(System.in);
 		int number = scanner.nextInt();
 		int[] array = new int[number];

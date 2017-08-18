@@ -12,12 +12,23 @@ public class ReverseString {
 		word.append(input);
 		word = word.reverse();
 		
+		System.out.println(word);
+		
 		for (int i = 0; i < word.length(); i++){
 			System.out.print(word.charAt(i)); 		
 		}
-		/* second way
+		
+		// second way
+		System.out.println();
 		for (int i = input.length() - 1; i >= 0; i--){
 			System.out.print(input.charAt(i));
-		} */
+		} 
+		
+		// third way
+		System.out.println();
+		char[] chars = input.toCharArray();
+		for (int i = chars.length - 1; i >= 0; i--) {
+			System.out.print(chars[i]);
+		}
 	}
 }
