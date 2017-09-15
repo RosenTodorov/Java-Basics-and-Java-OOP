@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CuboidTest" project="ShapeAreaAndPerimeterClasses" tests="30" started="30" failures="0" errors="0" ignored="0">
+  <testsuite name="main.source.CuboidTest" time="0.0">
+    <testcase name="testGetAreaNegativeValueHeight" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetPerimeterNaNDepth" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetPerimeterNaNWidth" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetAreaPositiveInfinityHeight" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetPerimeterNaNHeight" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetPerimeterNegativeValueDepth" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetPerimeterNegativeValueWidth" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetPerimeterNegativeValueHeight" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetAreaNaNHeight" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetAreaNegativeInfinityHeight" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetArea" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetAreaNegativeValueDepth" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetAreaNegativeValueWidth" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testInitialValueDepth" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testInitialValueWidth" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetAreaPositiveInfinityDepth" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetAreaPositiveInfinityWidth" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetAreaNegativeInfinityDepth" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetAreaNegativeInfinityWidth" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetPerimeterPositiveInfinityDepth" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetPerimeterPositiveInfinityWidth" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetPerimeterPositiveInfinityHeight" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetPerimeterNegativeInfinityDepth" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetPerimeterNegativeInfinityWidth" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetAreaNaNDepth" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetAreaNaNWidth" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testInitialValueHeight" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetPerimeter" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testInitialValues" classname="main.source.CuboidTest" time="0.0"/>
+    <testcase name="testGetPerimeterNegativeInfinityHeight" classname="main.source.CuboidTest" time="0.0"/>
+  </testsuite>
+</testrun>

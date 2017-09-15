@@ -1,0 +1,58 @@
+package main.source;
+import main.source.Square;
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class SquareTest {
+
+	public SquareTest() {
+	}
+	
+	@BeforeClass
+	public static void setUpClass() {
+	}
+	
+	@AfterClass
+	public static void tearDownClass() {
+	}
+
+	@Before
+	public void setUp() {
+	}
+	
+	@After
+	public void tearDown() {
+	}
+	
+	/**
+	 * Test getArea method, of class Square.
+	 */
+	@Test
+	public void testGetArea() {
+		Square theSquare = new Square(5);
+		
+	 	double expArea = 25;
+		double actArea = theSquare.getArea();
+		
+		assertEquals("Area test", expArea, actArea, .01);
+	}
+	
+	/**
+	 * Test getPerimeter method, of class Square.
+	 */
+	@Test
+	public void testGetPerimeter() {
+		Square theSquare = new Square(5);
+		
+		double expPerim = 20;
+		double actPerim = theSquare.getPerimeter();
+		
+		assertEquals("Perimeter test", expPerim, actPerim, .01);
+	}
+
+}

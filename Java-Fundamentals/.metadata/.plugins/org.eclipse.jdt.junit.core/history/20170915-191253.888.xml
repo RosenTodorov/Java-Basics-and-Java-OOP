@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CircleTest" project="ShapeAreaAndPerimeterClasses" tests="11" started="11" failures="0" errors="0" ignored="0">
+  <testsuite name="main.source.CircleTest" time="0.017">
+    <testcase name="testGetPerimeterNegativeInfinityRadius" classname="main.source.CircleTest" time="0.01"/>
+    <testcase name="testGetAreaNegativeValueRadius" classname="main.source.CircleTest" time="0.005"/>
+    <testcase name="testGetAreaPositiveInfinityRadius" classname="main.source.CircleTest" time="0.0"/>
+    <testcase name="testGetPerimeterNaNRadius" classname="main.source.CircleTest" time="0.0"/>
+    <testcase name="testGetPerimeterNegativeValueRadius" classname="main.source.CircleTest" time="0.002"/>
+    <testcase name="testGetAreaNaNRadius" classname="main.source.CircleTest" time="0.0"/>
+    <testcase name="testGetAreaNegativeInfinityRadius" classname="main.source.CircleTest" time="0.0"/>
+    <testcase name="testGetArea" classname="main.source.CircleTest" time="0.0"/>
+    <testcase name="testGetPerimeter" classname="main.source.CircleTest" time="0.0"/>
+    <testcase name="testGetPerimeterPositiveInfinityRadius" classname="main.source.CircleTest" time="0.0"/>
+    <testcase name="testInitialValues" classname="main.source.CircleTest" time="0.0"/>
+  </testsuite>
+</testrun>

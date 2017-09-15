@@ -1,0 +1,12 @@
+package main.source;
+
+public class GeometryExamples {
+	public static void main(String[] args) {
+		 double base = 2, height = 3, hypo = 4;
+	     Shape triangle = new Triangle(base, height, hypo);
+	     System.out.println("Triangle sides: " + base + ", " + height + ", " + hypo
+	             + "\nResulting Area: " + triangle.getArea()
+	             + "\nResulting Perimeter: " + triangle.getPerimeter() + "\n");
+
+	}
+}

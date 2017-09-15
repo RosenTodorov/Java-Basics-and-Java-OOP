@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TriangleTest" project="ShapeAreaAndPerimeterClasses" tests="26" started="26" failures="0" errors="0" ignored="0">
+  <testsuite name="main.source.TriangleTest" time="0.01">
+    <testcase name="testInitialValueBase" classname="main.source.TriangleTest" time="0.008"/>
+    <testcase name="testInitialValueHypo" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetPerimeterNaNHeight" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetPerimeterNegativeValueHeight" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetArea" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetAreaNegativeInfinityBase" classname="main.source.TriangleTest" time="0.001"/>
+    <testcase name="testGetAreaNegativeInfinityHypo" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetPerimeterPositiveInfinityBase" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetPerimeterPositiveInfinityHypo" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetPerimeterNegativeValueBase" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetPerimeterNegativeValueHypo" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetPerimeterNaNBase" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetPerimeterNaNHypo" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetPerimeterPositiveInfinityHeight" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testInitialValueHeight" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetPerimeterNegativeInfinityBase" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetPerimeterNegativeInfinityHypo" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetPerimeter" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetAreaNegativeValueBase" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetAreaNegativeValueHypo" classname="main.source.TriangleTest" time="0.001"/>
+    <testcase name="testGetAreaNaNBase" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetAreaNaNHypo" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testInitialValues" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetAreaPositiveInfinityBase" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetAreaPositiveInfinityHypo" classname="main.source.TriangleTest" time="0.0"/>
+    <testcase name="testGetPerimeterNegativeInfinityHeight" classname="main.source.TriangleTest" time="0.0"/>
+  </testsuite>
+</testrun>

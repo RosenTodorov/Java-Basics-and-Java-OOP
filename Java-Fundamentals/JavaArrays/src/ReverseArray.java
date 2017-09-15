@@ -10,7 +10,7 @@ public class ReverseArray {
 		// TODO Auto-generated method stub
 		Integer arr[] = {1,2,3,4,5};
 		
-//		List<Integer> container = Arrays.asList(arr);
+//		List<Integer> container = Arrays.asList(arr); 	Collections.reverse(container);
 		List<Integer> container = new ArrayList<Integer>();
 		
 		for (int i = arr.length - 1; i >= 0; i--){

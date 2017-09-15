@@ -1,0 +1,30 @@
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class ReverseNumbersWithStack {
+	/* Write a program that reads N integers from the console and reverses them using a stack.
+	 *  Use the Stack<Integer> class.
+	 */
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner(System.in);
+		int commantCount = input.nextInt();
+		int[] array = new int[commantCount];
+		Stack<Integer> stack = new Stack<>();
+		
+		for(int i = 0; i < array.length; i++) {
+			int elementArray = input.nextInt();
+			array[i] = elementArray;	
+		}
+		
+		for(int i = 0; i < array.length; i++) {
+			stack.push(array[i]);
+		}
+		
+		for(int i = 0; i < array.length; i++) {
+			array[i] = stack.pop();
+		}
+	}
+}

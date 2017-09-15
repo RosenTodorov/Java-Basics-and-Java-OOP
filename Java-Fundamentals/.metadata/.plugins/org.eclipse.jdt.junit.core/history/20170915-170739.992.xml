@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="SquareTest" project="ShapeAreaAndPerimeterClasses" tests="11" started="11" failures="0" errors="0" ignored="0">
+  <testsuite name="main.source.SquareTest" time="0.016">
+    <testcase name="testGetArea" classname="main.source.SquareTest" time="0.016"/>
+    <testcase name="testGetAreaNegativeInfinitySide" classname="main.source.SquareTest" time="0.0"/>
+    <testcase name="testGetPerimeterPositiveInfinitySide" classname="main.source.SquareTest" time="0.0"/>
+    <testcase name="testGetPerimeterNegativeValueSide" classname="main.source.SquareTest" time="0.0"/>
+    <testcase name="testGetPerimeterNaNSide" classname="main.source.SquareTest" time="0.0"/>
+    <testcase name="testGetPerimeterNegativeInfinitySide" classname="main.source.SquareTest" time="0.0"/>
+    <testcase name="testGetPerimeter" classname="main.source.SquareTest" time="0.0"/>
+    <testcase name="testGetAreaNegativeValueSide" classname="main.source.SquareTest" time="0.0"/>
+    <testcase name="testGetAreaNaNSide" classname="main.source.SquareTest" time="0.0"/>
+    <testcase name="testInitialValues" classname="main.source.SquareTest" time="0.0"/>
+    <testcase name="testGetAreaPositiveInfinitySide" classname="main.source.SquareTest" time="0.0"/>
+  </testsuite>
+</testrun>

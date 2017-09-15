@@ -1,0 +1,63 @@
+package main.source;
+import main.source.Triangle;
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class TriangleTest {
+	
+	public TriangleTest() {
+	}
+	
+	@BeforeClass
+	public static void setUpClass() {
+	}
+	
+	@AfterClass
+	public static void tearDownClass() {
+	}
+
+	@Before
+	public void setUp() {
+	}
+	
+	@After
+	public void tearDown() {
+	}
+	
+	/**
+	 * Test getArea method, of class Triangle.
+	 */
+	@Test
+	public void testGetArea() {
+		Triangle theTria = new Triangle(3, 4, 5);
+		
+	 	double expArea = 7.5;
+		double actArea = theTria.getArea();
+		
+		assertEquals("Area test", expArea, actArea, .01);
+	}
+	
+	/**
+	 * Test getPerimeter method, of class Triangle.
+	 */
+	@Test
+	public void testGetPerimeter() {
+		Triangle theTria = new Triangle(3, 4, 5);
+		
+		double expPerim = 12;
+		double actPerim = theTria.getPerimeter();
+		
+		assertEquals("Perimeter test", expPerim, actPerim, .01);
+	}
+	
+	@Test(expected=IllegalArgumentException.class)
+	public void testNegativeValue() {
+		Triangle theTria = new Triangle(-3.0, 4.0, 5.0);
+		double actArea = theTria.getBase();
+	}
+}

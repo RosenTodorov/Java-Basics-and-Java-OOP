@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Collections;
+
 
 public class findMinAndMaxElemInArray {
 
@@ -22,5 +25,11 @@ public class findMinAndMaxElemInArray {
 		System.out.println(biggest);
 		System.out.println(bigNumber);
 		System.out.println(smallest);
+		
+		Arrays.sort(arr);
+		System.out.println("The biggest: "+ arr[arr.length - 1]);
+		System.out.println("The second big number is: "+ arr[arr.length - 2]);
+		System.out.println("The smallest: "+ arr[0]);
+		
 	}
 }

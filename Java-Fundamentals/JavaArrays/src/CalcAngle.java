@@ -15,11 +15,11 @@ public class CalcAngle {
 			minute = 0;
 		}
 		// the minute hand moves 360 degree in 60 minute(or 6 degree in one minute) 
-		double degreePerMinute = 360/60;
+		double degreePerMinute = 360/60; // -> 6
 		// hour hand moves 360 degree in 12 hours(or 0.5 degree in 1 minute)
-		double degreePerHour = 360/12;
-		// kolko e izmenenieto na malkata strelka pri dvijenie na golqmata
-		double hourDegreePerMinute = degreePerHour/60;
+		double degreePerHour = 360/12; // -> 30
+		// kolko e izmenenieto na malkata strelka pri dvijenie na golqmata -> 0.5
+		double hourDegreePerMinute = degreePerHour/60; // 0.5
 		
 		double hourAngle = hourDegreePerMinute * (hour * 60 + minute);
 		double minuteAngle = degreePerMinute * minute;

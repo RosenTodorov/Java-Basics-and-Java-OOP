@@ -1,0 +1,214 @@
+package main.source;
+import main.source.Rectangle;
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class RectangleTest {
+	
+	public RectangleTest() {
+	}
+	
+	@BeforeClass
+	public static void setUpClass() {
+	}
+	
+	@AfterClass
+	public static void tearDownClass() {
+	}
+
+	@Before
+	public void setUp() {
+	}
+	
+	@After
+	public void tearDown() {
+	}
+	
+	/**
+	 * Test getArea method, of class Rectangle.
+	 */
+	@Test
+	public void testGetArea() {
+		Rectangle theRect = new Rectangle(4, 5);
+		
+	 	double expArea = 20;
+		double actArea = theRect.getArea();
+		
+		assertEquals("Area test", expArea, actArea, .01);
+	}
+	
+	/**
+	 * Test getPerimeter method, of class Rectangle.
+	 */
+	@Test
+	public void testGetPerimeter() {
+		Rectangle theRect = new Rectangle(4, 5);
+		
+		double expPerim = 18;
+		double actPerim = theRect.getPerimeter();
+		
+		assertEquals("Perimeter test", expPerim, actPerim, .01);
+	}
+	
+	@Test
+	public void testInitialValues() {
+		Rectangle theRect = new Rectangle(0.0, 0.0);
+		
+		double expArea = 0.0;
+		double actArea = theRect.getArea();
+		
+		assertEquals("Area test", expArea, actArea, .01);
+		
+		double expPerim = 0.0;
+		double actPerim = theRect.getPerimeter();
+		
+		assertEquals("Perimeter test", expPerim, actPerim, .01);	
+	}
+	
+	@Test
+	public void testInitialValueWidth() {
+		Rectangle theRect = new Rectangle(0.0, 7.0);
+		
+	 	double expArea = 0.0;
+		double actArea = theRect.getArea();
+		
+		assertEquals("Area test", expArea, actArea, .01);
+		
+		double expPerim = 14.0;
+		double actPerim = theRect.getPerimeter();
+		
+		assertEquals("Perimeter test", expPerim, actPerim, .01);
+	}
+	
+	@Test
+	public void testInitialValueHeight() {
+		Rectangle theRect = new Rectangle(7.0, 0.0);
+		
+	 	double expArea = 0.0;
+		double actArea = theRect.getArea();
+		
+		assertEquals("Area test", expArea, actArea, .01);
+		
+		double expPerim = 14.0;
+		double actPerim = theRect.getPerimeter();
+		
+		assertEquals("Perimeter test", expPerim, actPerim, .01);
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaNegativeValueWidth() {
+		Rectangle theRect = new Rectangle(-4, 5);
+		
+		double actArea = theRect.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaNegativeValueHeight() {
+		Rectangle theRect = new Rectangle(4, -5);
+		
+		double actArea = theRect.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterNegativeValueWidth() {
+		Rectangle theRect = new Rectangle(-4, 5);
+		
+		double actPerim = theRect.getPerimeter();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterNegativeValueHeight() {
+        Rectangle theRect = new Rectangle(4, -5);
+		
+		double actPerim = theRect.getPerimeter();	
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaNaNWidth() {
+		Rectangle theRect = new Rectangle(Double.NaN, 5);
+		
+		double actArea = theRect.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaNaNHeight() {
+		Rectangle theRect = new Rectangle(4, Double.NaN);
+		
+		double actArea = theRect.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterNaNWidth() {
+		Rectangle theRect = new Rectangle(Double.NaN, 5);
+		
+		double actPerim = theRect.getPerimeter();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterNaNHeight() {
+		Rectangle theRect = new Rectangle(4, Double.NaN);
+		
+		double actPerim = theRect.getPerimeter();			
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaPositiveInfinityWidth() {
+	    Rectangle theRect = new Rectangle(Double.POSITIVE_INFINITY, 5);
+		
+		double actPerim = theRect.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaPositiveInfinityHeight() {
+        Rectangle theRect = new Rectangle(4, Double.POSITIVE_INFINITY);
+		
+		double actPerim = theRect.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaNegativeInfinityWidth() {
+        Rectangle theRect = new Rectangle(Double.NEGATIVE_INFINITY, 5);
+		
+		double actPerim = theRect.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaNegativeInfinityHeight() {
+        Rectangle theRect = new Rectangle(4, Double.NEGATIVE_INFINITY);
+		
+		double actPerim = theRect.getArea();
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterPositiveInfinityWidth() {
+		Rectangle theRect = new Rectangle(Double.POSITIVE_INFINITY, 5);
+		
+		double actPerim = theRect.getPerimeter();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterPositiveInfinityHeight() {
+		Rectangle theRect = new Rectangle(4, Double.POSITIVE_INFINITY);
+		
+		double actPerim = theRect.getPerimeter();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterNegativeInfinityWidth() {
+		Rectangle theRect = new Rectangle(Double.NEGATIVE_INFINITY, 5);
+		
+		double actPerim = theRect.getPerimeter();	
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterNegativeInfinityHeight() {
+		Rectangle theRect = new Rectangle(4, Double.NEGATIVE_INFINITY);
+		
+		double actPerim = theRect.getPerimeter();	
+	}
+}

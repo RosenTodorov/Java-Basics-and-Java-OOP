@@ -1,0 +1,62 @@
+package main.source;
+
+public class Triangle extends Shape {
+	private double sideA;
+	private double sideB;
+	private double sideC;
+	
+	public Triangle(double sideA, double sideB, double sideC) {
+		this.sideA = sideA;
+		this.sideB = sideB;
+		this.sideC = sideC;
+	}
+
+	public double getSideA() {
+		return this.sideA;
+	}
+	
+	public void setSideA(double sideA) {
+		if (sideA < 0) {
+			throw new IllegalArgumentException("sideA cannot be negative");
+		}
+		
+		this.sideA = sideA;
+	}
+
+	public double getSideB() {
+		return this.sideB;
+	}
+	
+	public void setSideB(double sideB) {
+		if (sideB < 0) {
+			throw new IllegalArgumentException("sideB cannot be negative");
+		}
+		
+		this.sideB = sideB;
+	}
+
+	public double getSideC() {
+		return this.sideC;
+	}
+	
+	public void setSideC(double sideC) {
+		if (sideC < 0) {
+			throw new IllegalArgumentException("sideC cannot be negative");
+		}
+		
+		this.sideC = sideC;
+	}
+	
+	@Override
+	public double getArea() {
+		double poluPerimetar  = (this.sideA + this.sideB + this.sideC) / 2;
+		double area = Math.sqrt(poluPerimetar * (poluPerimetar - this.sideA) * (poluPerimetar - this.sideB) * (poluPerimetar - this.sideC));
+		return area;
+	}
+
+	@Override
+	public double getPerimeter() {
+		double perimeter = this.sideA + this.sideB + this.sideC;
+		return perimeter;
+	}
+}

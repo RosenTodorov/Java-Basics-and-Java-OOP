@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="RectangleTest" project="ShapeAreaAndPerimeterClasses" tests="7" started="7" failures="0" errors="0" ignored="0">
+  <testsuite name="main.source.RectangleTest" time="0.0">
+    <testcase name="testGetAreaNegativeValueHeight" classname="main.source.RectangleTest" time="0.0"/>
+    <testcase name="testGetArea" classname="main.source.RectangleTest" time="0.0"/>
+    <testcase name="testGetAreaNegativeValueWidth" classname="main.source.RectangleTest" time="0.0"/>
+    <testcase name="testInitialValueWidth" classname="main.source.RectangleTest" time="0.0"/>
+    <testcase name="testInitialValueHeight" classname="main.source.RectangleTest" time="0.0"/>
+    <testcase name="testGetPerimeter" classname="main.source.RectangleTest" time="0.0"/>
+    <testcase name="testInitialValues" classname="main.source.RectangleTest" time="0.0"/>
+  </testsuite>
+</testrun>

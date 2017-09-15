@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="DiamondTest" project="ShapeAreaAndPerimeterClasses" tests="18" started="18" failures="0" errors="0" ignored="0">
+  <testsuite name="main.source.DiamondTest" time="0.0">
+    <testcase name="testInitialValueSide" classname="main.source.DiamondTest" time="0.0"/>
+    <testcase name="testGetAreaPositiveInfinityBreadth" classname="main.source.DiamondTest" time="0.0"/>
+    <testcase name="testGetAreaNegativeValueHeight" classname="main.source.DiamondTest" time="0.0"/>
+    <testcase name="testGetAreaPositiveInfinityHeight" classname="main.source.DiamondTest" time="0.0"/>
+    <testcase name="testGetAreaNegativeValueBreadth" classname="main.source.DiamondTest" time="0.0"/>
+    <testcase name="testGetAreaNaNHeight" classname="main.source.DiamondTest" time="0.0"/>
+    <testcase name="testGetAreaNegativeInfinityHeight" classname="main.source.DiamondTest" time="0.0"/>
+    <testcase name="testGetAreaNegativeInfinityBreadth" classname="main.source.DiamondTest" time="0.0"/>
+    <testcase name="testGetArea" classname="main.source.DiamondTest" time="0.0"/>
+    <testcase name="testGetPerimeterPositiveInfinitySide" classname="main.source.DiamondTest" time="0.0"/>
+    <testcase name="testGetPerimeterNegativeValueSide" classname="main.source.DiamondTest" time="0.0"/>
+    <testcase name="testInitialValueBreadth" classname="main.source.DiamondTest" time="0.0"/>
+    <testcase name="testGetPerimeterNaNSide" classname="main.source.DiamondTest" time="0.0"/>
+    <testcase name="testGetAreaNaNBreadth" classname="main.source.DiamondTest" time="0.0"/>
+    <testcase name="testInitialValueHeight" classname="main.source.DiamondTest" time="0.0"/>
+    <testcase name="testGetPerimeterNegativeInfinitySide" classname="main.source.DiamondTest" time="0.0"/>
+    <testcase name="testGetPerimeter" classname="main.source.DiamondTest" time="0.0"/>
+    <testcase name="testInitialValues" classname="main.source.DiamondTest" time="0.0"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,130 @@
+package main.source;
+import main.source.Square;
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class SquareTest {
+
+	public SquareTest() {
+	}
+	
+	@BeforeClass
+	public static void setUpClass() {
+		System.out.println("Setup for test complete.");
+	}
+	
+	@AfterClass
+	public static void tearDownClass() {
+		System.out.println("Test complete!");
+	}
+
+	@Before
+	public void setUp() {
+	}
+	
+	@After
+	public void tearDown() {
+	}
+	
+	/**
+	 * Test getArea method, of class Square.
+	 */
+	@Test
+	public void testGetArea() {
+		Square theSquare = new Square(5);
+		
+	 	double expArea = 25;
+		double actArea = theSquare.getArea();
+		
+		assertEquals("Area test", expArea, actArea, .01);
+	}
+	
+	/**
+	 * Test getPerimeter method, of class Square.
+	 */
+	@Test
+	public void testGetPerimeter() {
+		Square theSquare = new Square(5);
+		
+		double expPerim = 20;
+		double actPerim = theSquare.getPerimeter();
+		
+		assertEquals("Perimeter test", expPerim, actPerim, .01);
+	}
+	
+	@Test
+	public void testInitialValues() {
+		Square theSquare = new Square(0.0);
+		
+		double expArea = 0.0;
+		double actArea = theSquare.getArea();
+		
+		assertEquals("Area test", expArea, actArea, .01);
+		
+		double expPerim = 0.0;
+		double actPerim = theSquare.getPerimeter();
+		
+		assertEquals("Perimeter test", expPerim, actPerim, .01);	
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaNegativeValueSide() {
+		Square theSquare = new Square(-4);
+		
+		double actArea = theSquare.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterNegativeValueSide() {
+		Square theSquare = new Square(-4);
+		
+		double actPerim = theSquare.getPerimeter();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaNaNSide() {
+		Square theSquare = new Square(Double.NaN);
+		
+		double actArea = theSquare.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterNaNSide() {
+		Square theSquare = new Square(Double.NaN);
+		
+		double actPerim = theSquare.getPerimeter();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaPositiveInfinitySide() {
+	    Square theSquare = new Square(Double.POSITIVE_INFINITY);
+		
+		double actPerim = theSquare.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaNegativeInfinitySide() {
+        Square theSquare = new Square(Double.NEGATIVE_INFINITY);
+		
+		double actPerim = theSquare.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterPositiveInfinitySide() {
+		Square theSquare = new Square(Double.POSITIVE_INFINITY);
+		
+		double actPerim = theSquare.getPerimeter();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterNegativeInfinitySide() {
+		Square theSquare = new Square(Double.NEGATIVE_INFINITY);
+		
+		double actPerim = theSquare.getPerimeter();	
+	}
+}
