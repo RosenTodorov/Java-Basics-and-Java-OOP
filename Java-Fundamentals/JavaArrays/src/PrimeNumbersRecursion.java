@@ -9,14 +9,6 @@ public class PrimeNumbersRecursion {
 		Scanner scanner = new Scanner(System.in);
 		int input = scanner.nextInt();
 			for (int i = 2; i <= input; i++) {
-				/* 
-				 int temp = input % i;
-	             if(temp == 0)
-	             {
-	                isPrime = false;
-	                break;
- 	             }
-				 */
 			int result = primeRecur(i, i - 1);
 			if (result == 1) {
 				System.out.println(i + " is a prime number");

@@ -4,7 +4,7 @@ public class QuickSortMethod {
 		int i = left;
 		int j = right;
 		// Get the pivot element from the middle of the list
-		int pivot = numbers[left + (right - left)/2]; // int pivot = numbers[(left + right)/2];
+		int pivot = numbers[left + (right - left)/2];
 		
 		// Divide into two lists
 		while (i <= j) {

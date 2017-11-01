@@ -4,7 +4,7 @@ import java.util.Set;
 
 public class EqualCharsInString {
 
-	public static Set<Character> equalChar(String word) {
+	public static Set<Character> EqualChar(String word) {
 		//word = "Strings".toLowerCase();
 		char[] wordChars = word.toCharArray();
 		
@@ -27,7 +27,7 @@ public class EqualCharsInString {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		String word = input.nextLine().toLowerCase();
-		equalChar(word);
+		EqualChar(word);
 
 	}
 }
