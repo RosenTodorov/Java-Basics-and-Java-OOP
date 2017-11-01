@@ -1,8 +1,7 @@
 import java.util.Arrays;
 import java.util.Collections;
 
-
-public class findMinAndMaxElemInArray {
+public class FindMinAndMaxElemInArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
