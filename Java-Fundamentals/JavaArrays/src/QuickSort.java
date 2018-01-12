@@ -29,11 +29,11 @@ public class QuickSort {
 		int pivot = numbers[(left + right)/2];
 		
 		while (i <= j) {
-		while(numbers[i].compareTo(pivot) < 0) {
+		while(numbers[i].compareTo(pivot) < 0) { // while (numbers[i] < pivot) 
 			i++;
 		}
 		
-		while(numbers[j].compareTo(pivot) > 0) {
+		while(numbers[j].compareTo(pivot) > 0) { // while (numbers[j] > pivot) 
 			j--;
 		}
 		

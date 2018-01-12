@@ -58,5 +58,16 @@ public class Factorial {
 	    }
 	    System.out.println(j);
 	  
+	    int u = 10;    
+	    if((--u < 10)? true : false) {
+	    	System.out.println("One");
+	    }
+	    if (u < 10) {
+	    	System.out.println("Two");
+	    }
+	    
+	    StringBuilder charche = new StringBuilder("rumble");
+	    charche.append(4).deleteCharAt(3).delete(3, charche.length()-1); // oshte otgore -1 zaradi delete metoda
+	    System.out.println(charche);
 	}
 }

@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class LastDigitToString {
 
 	public static void main(String[] args) {

@@ -22,8 +22,7 @@ public class SequenceOfGivenSum {
 				sum = sum + array[j];
 				elements = elements + " " + array[j];
 				
-				if (sum == s){
-					
+				if (sum == s){			
 					System.out.println("The elements for your desired sum are: " + elements);
 					count++;
 					sum = 0;

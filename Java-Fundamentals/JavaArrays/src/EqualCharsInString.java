@@ -4,11 +4,11 @@ import java.util.Set;
 
 public class EqualCharsInString {
 
-	public static Set<Character> EqualChar(String word) {
+	public static HashSet<Character> equalChar(String word) {
 		//word = "Strings".toLowerCase();
-		char[] wordChars = word.toCharArray();
+		char[] wordChars = word.toLowerCase().toCharArray();
 		
-		Set<Character> uniqueChars = new HashSet<>();
+		HashSet<Character> uniqueChars = new HashSet<>();
 		
 		for(char charWord : wordChars){
 			if (!uniqueChars.contains(charWord)) {
@@ -27,7 +27,7 @@ public class EqualCharsInString {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		String word = input.nextLine().toLowerCase();
-		EqualChar(word);
+		equalChar(word);
 
 	}
 }

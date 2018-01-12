@@ -10,8 +10,7 @@ public class ReverseStringRecursion {
 		System.out.print(reverseStr(word));		
 		}
 		
-		public static String reverseStr(String word) {       
-		
+		public static String reverseStr(String word) {       	
 		if (word == null) {
 			return word;
 		} 

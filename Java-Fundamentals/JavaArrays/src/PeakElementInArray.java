@@ -6,8 +6,7 @@ public class PeakElementInArray {
 		int arr[] = {1,10,2,15,7};
 		int n = arr.length;
 		System.out.println("Index of a peak point is " +
-				findPeak(arr, n));
-		
+				findPeak(arr, n));	
 	}
 	
 	static int findPeak(int arr[], int min, int max, int n){

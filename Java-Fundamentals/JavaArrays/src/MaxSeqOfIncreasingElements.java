@@ -12,7 +12,7 @@ public class MaxSeqOfIncreasingElements {
 		for(int i = 0; i < arrayLength; i++) {
 			System.out.print("Plese enter the elements of the array: ");
 			int arrayElement = scanner.nextInt();
-			array[i] = arrayElement;
+			array[i] = arrayElement;     // 1, 2, 4, 3, 0
 		}
 		
 		int maxCount = 0;
@@ -41,7 +41,7 @@ public class MaxSeqOfIncreasingElements {
 				sequence += array[array.length - 1];
 				maxSequence = sequence;
 			}
-	
+			
 			System.out.println(maxSequence);
 		}
 }

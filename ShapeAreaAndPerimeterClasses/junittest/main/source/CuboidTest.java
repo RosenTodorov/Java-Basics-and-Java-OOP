@@ -1,0 +1,288 @@
+package main.source;
+import main.source.Cuboid;
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class CuboidTest {
+
+	public CuboidTest() {
+	}
+	
+	@BeforeClass
+	public static void setUpClass() {
+		System.out.println("Setup for test complete.");
+	}
+	
+	@AfterClass
+	public static void tearDownClass() {
+		System.out.println("Test complete!");
+	}
+
+	@Before
+	public void setUp() {
+	}
+	
+	@After
+	public void tearDown() {
+	}
+	
+	/**
+	 * Test getArea method, of class Cuboid.
+	 */
+	@Test
+	public void testGetArea() {
+		Cuboid theCub = new Cuboid(3, 5, 4);
+		
+	 	double expArea = 47;
+		double actArea = theCub.getArea();
+		
+		assertEquals("Area test", expArea, actArea, .01);
+	}
+	
+	/**
+	 * Test getPerimeter method, of class Cuboid.
+	 */
+	@Test
+	public void testGetPerimeter() {
+		Cuboid theCub = new Cuboid(3, 5, 4);
+		
+		double expPerim = 60;
+		double actPerim = theCub.getPerimeter();
+		
+		assertEquals("Perimeter test", expPerim, actPerim, .01);
+	}
+	
+	@Test
+	public void testInitialValues() {
+		Cuboid theCub = new Cuboid(0.0, 0.0, 0.0);
+		
+		double expArea = 0.0;
+		double actArea = theCub.getArea();
+		
+		assertEquals("Area test", expArea, actArea, .01);
+		
+		double expPerim = 0.0;
+		double actPerim = theCub.getPerimeter();
+		
+		assertEquals("Perimeter test", expPerim, actPerim, .01);	
+	}
+	
+	@Test
+	public void testInitialValueWidth() {
+		Cuboid theCub = new Cuboid(0, 5, 4);
+		
+	 	double expArea = 20.0;
+		double actArea = theCub.getArea();
+		
+		assertEquals("Area test", expArea, actArea, .01);
+		
+		double expPerim = 0.0;
+		double actPerim = theCub.getPerimeter();
+		
+		assertEquals("Perimeter test", expPerim, actPerim, .01);
+	}
+	
+	@Test
+	public void testInitialValueHeight() {
+		Cuboid theCub = new Cuboid(3, 0, 4);
+		
+	 	double expArea = 12.0;
+		double actArea = theCub.getArea();
+		
+		assertEquals("Area test", expArea, actArea, .01);
+		
+		double expPerim = 0.0;
+		double actPerim = theCub.getPerimeter();
+		
+		assertEquals("Perimeter test", expPerim, actPerim, .01);
+	}
+	
+	@Test
+	public void testInitialValueDepth() {
+		Cuboid theCub = new Cuboid(3, 5, 0);
+		
+	 	double expArea = 15.0;
+		double actArea = theCub.getArea();
+		
+		assertEquals("Area test", expArea, actArea, .01);
+		
+		double expPerim = 0.0;
+		double actPerim = theCub.getPerimeter();
+		
+		assertEquals("Perimeter test", expPerim, actPerim, .01);
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaNegativeValueWidth() {
+		Cuboid theCub = new Cuboid(-3, 5, 4);
+		
+		double actArea = theCub.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaNegativeValueHeight() {
+		Cuboid theCub = new Cuboid(3, -5, 4);
+		
+		double actArea = theCub.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaNegativeValueDepth() {
+		Cuboid theCub = new Cuboid(3, 5, -4);
+		
+		double actArea = theCub.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterNegativeValueWidth() {
+		Cuboid theCub = new Cuboid(-3, 5, 4);
+		
+		double actPerim = theCub.getPerimeter();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterNegativeValueHeight() {
+		Cuboid theCub = new Cuboid(3, -5, 4);
+		
+		double actPerim = theCub.getPerimeter();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterNegativeValueDepth() {
+		Cuboid theCub = new Cuboid(3, 5, -4);
+		
+		double actPerim = theCub.getPerimeter();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaNaNWidth() {
+		Cuboid theCub = new Cuboid(Double.NaN, 5, 4);
+		
+		double actArea = theCub.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaNaNHeight() {
+		Cuboid theCub = new Cuboid(3, Double.NaN, 4);
+		
+		double actArea = theCub.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaNaNDepth() {
+		Cuboid theCub = new Cuboid(3, 5, Double.NaN);
+		
+		double actArea = theCub.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterNaNWidth() {
+		Cuboid theCub = new Cuboid(Double.NaN, 5, 4);
+		
+		double actPerim = theCub.getPerimeter();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterNaNHeight() {
+		Cuboid theCub = new Cuboid(3, Double.NaN, 4);
+		
+		double actPerim = theCub.getPerimeter();			
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterNaNDepth() {
+		Cuboid theCub = new Cuboid(3, 5, Double.NaN);
+		
+		double actPerim = theCub.getPerimeter();			
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaPositiveInfinityWidth() {
+		Cuboid theCub = new Cuboid(Double.POSITIVE_INFINITY, 5, 4);
+		
+		double actArea = theCub.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaPositiveInfinityHeight() {
+		Cuboid theCub = new Cuboid(3, Double.POSITIVE_INFINITY, 4);
+		
+		double actArea = theCub.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaPositiveInfinityDepth() {
+		Cuboid theCub = new Cuboid(3, 5, Double.POSITIVE_INFINITY);
+		
+		double actArea = theCub.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaNegativeInfinityWidth() {
+		Cuboid theCub = new Cuboid(Double.NEGATIVE_INFINITY, 5, 4);
+		
+		double actArea = theCub.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaNegativeInfinityHeight() {
+		Cuboid theCub = new Cuboid(3, Double.NEGATIVE_INFINITY, 4);
+		
+		double actArea = theCub.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetAreaNegativeInfinityDepth() {
+		Cuboid theCub = new Cuboid(3, 5, Double.NEGATIVE_INFINITY);
+		
+		double actArea = theCub.getArea();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterPositiveInfinityWidth() {
+		Cuboid theCub = new Cuboid(Double.POSITIVE_INFINITY, 5, 4);
+		
+		double actPerim = theCub.getPerimeter();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterPositiveInfinityHeight() {
+		Cuboid theCub = new Cuboid(3, Double.POSITIVE_INFINITY, 4);
+		
+		double actPerim = theCub.getPerimeter();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterPositiveInfinityDepth() {
+		Cuboid theCub = new Cuboid(3, 5, Double.POSITIVE_INFINITY);
+		
+		double actPerim = theCub.getPerimeter();		
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterNegativeInfinityWidth() {
+		Cuboid theCub = new Cuboid(Double.NEGATIVE_INFINITY, 5, 4);
+		
+		double actPerim = theCub.getPerimeter();	
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterNegativeInfinityHeight() {
+		Cuboid theCub = new Cuboid(3, Double.NEGATIVE_INFINITY, 4);
+		
+		double actPerim = theCub.getPerimeter();	
+	}
+	
+	@Test(expected = IllegalArgumentException.class)
+	public void testGetPerimeterNegativeInfinityDepth() {
+		Cuboid theCub = new Cuboid(3, 5, Double.NEGATIVE_INFINITY);
+		
+		double actPerim = theCub.getPerimeter();	
+	}
+}
+

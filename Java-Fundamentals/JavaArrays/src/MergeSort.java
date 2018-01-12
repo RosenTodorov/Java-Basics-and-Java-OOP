@@ -21,6 +21,7 @@ public class MergeSort {
 	
 	static void MergeSort(int[] array, int length) {
 		int count = array.length;
+	//	int inversionCount = 0;
 		
 		if (count == 2) {
 			int temp;
@@ -32,25 +33,27 @@ public class MergeSort {
 		}
 		
 		else if (count > 2) {
-			count = length/2;
-			int[] left = new int[count];
-			int[] right = new int[count + 1];
+			int middle = length/2;
+			// puts the sorted output in the auxiliary array
+			int[] left = new int[middle];
+			int[] right = new int[middle + 1];
 			
-			for (int i = 0; i < count; i++){
+			for (int i = 0; i < middle; i++){
 				left[i] = array[i];
 			}
-			for (int i = count; i < length; i++){
-				right[i - count] = array[i];
+			for (int i = middle; i < length; i++){
+				right[i - middle] = array[i];
+			//  inversionCount = inversionCount + (i - middle);
 			}
 			
-			MergeSort(left, count);
-			MergeSort(right, length - count);
+			MergeSort(left, middle);
+			MergeSort(right, length - middle);
 			
 			int first = 0;
 			int second = 0;
 			
 			for(int k = 0; k < length; k++){
-				if (first < count && second <= count && left[first] <= right[second]) {
+				if (first < middle && second <= middle && left[first] <= right[second]) {
 					array[k] = left[first];
 					first++;
 				}
